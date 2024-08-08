@@ -35,6 +35,7 @@ public class StatsService {
 
      public int salesBelowAverage(long[] sales) {
           int counter = 0;
+          long averageSale = average(sales);
           for (long sale : sales) {
                if (sale < average(sales)) {
                     counter++;
